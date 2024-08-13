@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    h1 { color: #4CAF50; }
-    .content { margin-top: 20px; }
-    button { padding: 10px 20px; background-color: #f44336; color: white; border: none; cursor: pointer; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 <h1>Welcome to Your Dashboard</h1>
 <div class="content">
-  <p>Your token is: <span id="token"></span></p>
-  <button id="logoutButton">Logout</button>
+    <p>Your token is: <span id="token"></span></p>
+    <button id="logoutButton">Logout</button>
 </div>
 <script src="dashboard.js"></script>
 </body>
