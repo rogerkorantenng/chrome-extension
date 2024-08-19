@@ -6,32 +6,83 @@
     <title>Dashboard</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
-        h1 {
+        .container {
+            width: 360px;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow-y: auto;
+        }
+
+        h5 {
             color: #4CAF50;
+            margin: 0;
+            font-size: 1.5rem;
         }
 
         .content {
-            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        p, .info {
+            font-size: 1rem;
+            color: #343a40;
+            margin: 0;
+        }
+
+        span {
+            font-weight: bold;
+            color: #007bff;
         }
 
         button {
-            padding: 10px 20px;
+            padding: 12px;
             background-color: #f44336;
             color: white;
             border: none;
+            border-radius: 6px;
             cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c62828;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
 <body>
-<h1>Welcome to Your Dashboard</h1>
-<div class="content">
-    <p>Your token is: <span id="token"></span></p>
-    <button id="logoutButton">Logout</button>
+<div class="container">
+    <h5>Welcome to Your Dashboard</h5>
+    <div class="content">
+        <p>Your token is: <span id="token"></span></p>
+        <div class="info">
+            <p><strong>User ID:</strong> <span id="userId"></span></p>
+            <p><strong>Status:</strong> <span id="status"></span></p>
+        </div>
+        <button id="logoutButton">Logout</button>
+    </div>
 </div>
 <script src="dashboard.js"></script>
 </body>
