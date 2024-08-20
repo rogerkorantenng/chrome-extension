@@ -52,14 +52,15 @@
         }
 
         button {
-            width: 100%;
+            width: 40%;
             padding: 12px;
+            margin: 10px 0;
             background-color: #007bff;
             color: white;
             border: none;
-            border-radius: 6px;
+            border-radius: 4px;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 0.6rem;
             transition: background-color 0.3s ease;
         }
 
@@ -97,13 +98,22 @@
 <body>
 <div class="container">
     <img src="images/icon48.png" alt="App Icon"> <!-- Add your image icon here -->
-    <h3>Login</h3>
+    <h3>BuyBook</h3>
+    <!-- Commented out login inputs -->
+    <!--
     <input type="text" id="email" placeholder="Email" autofocus />
     <input type="password" id="password" placeholder="Password" />
-    <button id="loginButton">Login</button>
-    <div class="spinner" id="spinner"></div>
+    -->
+    <!-- Updated button ID and text -->
+    <button id="extractButton">Check Cart Details</button>
+    <h3>Payment Details</h3>
+    <div id="extractedText">No text extracted</div>
     <div class="error" id="error"></div>
+    <div class="spinner" id="spinner"></div>
+    <h3>Confirm and Pay</h3>
+    <button id="confirmPayment">Pay with Buy Book</button>
+
+    <script src="popup.js"></script>
 </div>
-<script src="popup.js"></script>
 </body>
 </html>
